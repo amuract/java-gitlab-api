@@ -693,6 +693,7 @@ public class GitlabAPI {
                 .append("name", name)
                 .appendIf("namespace_id", namespaceId)
                 .appendIf("description", description)
+                .append("path", name)
                 .appendIf("issues_enabled", issuesEnabled)
                 .appendIf("wall_enabled", wallEnabled)
                 .appendIf("merge_requests_enabled", mergeRequestsEnabled)
